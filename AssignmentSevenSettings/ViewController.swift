@@ -29,16 +29,17 @@ class ViewController: UIViewController {
     
     func createArray() -> [SettingOptions]{
         var tempArr: [SettingOptions] = []
-        let option0 = SettingOptions(img: UIImage(named:"user")!, lblName: "Sign in", supLblName: "",showToggle: true)
-        let option1 = SettingOptions(img: UIImage(named: "airplane")!, lblName: "Airplane Mode", supLblName: ">",showToggle: false)
-        let option2 = SettingOptions(img: UIImage(named: "wifi")!, lblName: "WiFi", supLblName: "Not connected >",showToggle: false)
-        let option3 = SettingOptions(img: UIImage(named: "bluetooth")!, lblName: "Bluetooth", supLblName: "Not connected >",showToggle: false)
-//        let option4 = SettingOptions(img: UIImage("")!, lblName: "", supLblName: "")
-//        let option5 = SettingOptions(img: UIImage("")!, lblName: "", supLblName: "")
-//        let option6 = SettingOptions(img: UIImage("")!, lblName: "", supLblName: "")
-//        let option7 = SettingOptions(img: UIImage("")!, lblName: "", supLblName: "")
-//        let option8 = SettingOptions(img: UIImage("")!, lblName: "", supLblName: "")
-//        let option9 = SettingOptions(img: UIImage("")!, lblName: "", supLblName: "")
+//        let option = SettingOptions(img: UIImage(named:"user")!, lblName: "Sign in", supLblName: "",showToggle: false)
+        let option0 = SettingOptions(img: UIImage(named: "airplane")!, lblName: "Airplane Mode", supLblName: ">",showToggle: true)
+        let option1 = SettingOptions(img: UIImage(named: "wifi")!, lblName: "WiFi", supLblName: "Not connected >",showToggle: false)
+        let option2 = SettingOptions(img: UIImage(named: "bluetooth")!, lblName: "Bluetooth", supLblName: "Not connected >",showToggle: false)
+        let option3 = SettingOptions(img: UIImage(named: "wifi")!, lblName: "Cellular", supLblName: "Not connected >",showToggle: false)
+        let option4 = SettingOptions(img: UIImage(named: "wifi")!, lblName: "Notification", supLblName: "",showToggle: false)
+        let option5 = SettingOptions(img: UIImage(named: "wifi")!, lblName: "Sound & haptics", supLblName: "",showToggle: false)
+        let option6 = SettingOptions(img: UIImage(named: "wifi")!, lblName: "Focus", supLblName: "",showToggle: false)
+        let option7 = SettingOptions(img: UIImage(named: "wifi")!, lblName: "Screen Time", supLblName: "",showToggle: false)
+        let option8 = SettingOptions(img: UIImage(named: "wifi")!, lblName: "General", supLblName: "",showToggle: false)
+        let option9 = SettingOptions(img: UIImage(named: "wifi")!, lblName: "Control Center", supLblName: "",showToggle: false)
 //        let option10 = SettingOptions(img: UIImage("")!, lblName: "", supLblName: "")
 //        let option11= SettingOptions(img: UIImage("")!, lblName: "", supLblName: "")
         
@@ -74,6 +75,7 @@ extension ViewController: UITableViewDataSource{
         return 3
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let option = options[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "optionCell",for: indexPath) as! ViewCell
         cell.setOption(option: option)

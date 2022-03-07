@@ -26,7 +26,7 @@ class ViewCell: UITableViewCell {
         }else{
             imgView.image = option.img
             imgViewLabel.text = option.lblName
-            supLblName.text = option.supLblName
+            supLblName.text = ""
             toggleSwitch.isHidden = false
         }
         

@@ -48,13 +48,13 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATm-2I-4Bk">
-                                                    <rect key="frame" x="220.5" y="11" width="173.5" height="22.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ATm-2I-4Bk">
+                                                    <rect key="frame" x="220.5" y="11" width="153.5" height="22.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="do2-6b-zFt">
+                                                <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="do2-6b-zFt">
                                                     <rect key="frame" x="353" y="8" width="51" height="36.5"/>
                                                 </switch>
                                             </subviews>
@@ -64,7 +64,7 @@
                                                 <constraint firstItem="nPR-Zk-MEP" firstAttribute="top" secondItem="pT5-0V-3mx" secondAttribute="top" id="62W-U4-vat"/>
                                                 <constraint firstAttribute="trailing" secondItem="do2-6b-zFt" secondAttribute="trailing" constant="12" id="9ql-PQ-6dF"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="ATm-2I-4Bk" secondAttribute="bottom" id="A2W-Qp-3kM"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="ATm-2I-4Bk" secondAttribute="trailing" id="Ev8-1Y-Wfo"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ATm-2I-4Bk" secondAttribute="trailing" constant="20" id="Ev8-1Y-Wfo"/>
                                                 <constraint firstAttribute="bottom" secondItem="nPR-Zk-MEP" secondAttribute="bottom" id="ReP-Ud-L2R"/>
                                                 <constraint firstItem="RME-F8-kn1" firstAttribute="top" secondItem="pT5-0V-3mx" secondAttribute="topMargin" id="VWE-Je-715"/>
                                                 <constraint firstAttribute="bottom" secondItem="do2-6b-zFt" secondAttribute="bottom" id="aaV-GU-jhC"/>
@@ -102,21 +102,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="84.375"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="hAk-ar-m1g">
-            <objects>
-                <viewController id="6QB-jd-ys7" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="01e-0J-rjn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="E0B-Fk-Nx4"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jMm-47-wdK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1593" y="84"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ovh-UN-ImI">
